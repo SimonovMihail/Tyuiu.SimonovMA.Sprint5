@@ -3,9 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>_55</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.SimonovMA.Sprint5.Task3.V13.Lib\Tyuiu.SimonovMA.Sprint5.Task3.V13.Lib.csproj" />
+  </ItemGroup>
 
 </Project>
