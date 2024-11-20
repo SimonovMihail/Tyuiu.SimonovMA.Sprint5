@@ -6,7 +6,6 @@ namespace Tyuiu.SimonovMA.Sprint5.Task5.V10.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask5V10.txt");
             string[] numbers = File.ReadAllText(path).Split('\n');
             double sum = 0;
             foreach (string number in numbers)
