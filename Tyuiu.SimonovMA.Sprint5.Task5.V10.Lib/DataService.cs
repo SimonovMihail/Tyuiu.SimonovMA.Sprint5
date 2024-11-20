@@ -6,7 +6,7 @@ namespace Tyuiu.SimonovMA.Sprint5.Task5.V10.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string[] numbers = File.ReadAllText(path).Split('\n');
+            string[] numbers = File.ReadAllText(path).Replace('.', ',').Split('\n');
             double sum = 0;
             foreach (string number in numbers)
             {
