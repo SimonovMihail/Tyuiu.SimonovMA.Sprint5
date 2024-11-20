@@ -6,8 +6,19 @@ namespace Tyuiu.SimonovMA.Sprint5.Task5.V10.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string[] numbers = File.ReadAllText(path).Replace('.', ',').Split('\n');
+            string[] numbers;
+
+            if (File.ReadAllText(path).Count(f => f == ' ') >= 1)
+            {
+                numbers = File.ReadAllText(path).Replace('.', ',').Split(' ');
+            }
+            else
+            {
+                numbers = File.ReadAllText(path).Replace('.', ',').Split('\n');
+            }
+
             double sum = 0;
+
             foreach (string number in numbers)
             {
                 double double_number = Convert.ToDouble(number);
