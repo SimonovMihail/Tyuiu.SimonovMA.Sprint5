@@ -24,7 +24,7 @@ namespace Tyuiu.SimonovMA.Sprint5.Task5.V10
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V10.txt");
+            string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask5V10.txt");
 
             double result = ds.LoadFromDataFile(path);
 
