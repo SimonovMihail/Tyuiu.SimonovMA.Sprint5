@@ -27,7 +27,6 @@ namespace Tyuiu.SimonovMA.Sprint5.Task4.V9
             Console.WriteLine("***************************************************************************");
 
             string path = Path.Combine("C:", "DataSprint5", "InPutDataFileTask4V9.txt");
-            string strX = File.ReadAllText(path);
 
             double result = ds.LoadFromDataFile(path);
 
